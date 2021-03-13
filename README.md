@@ -61,3 +61,5 @@ THEN he/she is automatically signed out of the site
 
 ## TECHNICAL DESCRIPTION: 
 - mysql2 package, express-handlebars, MySQL2, Sequelize, dotenv package, bcrypt package, express-session and connect-session-sequelize is used.
+
+- Link to the site: https://ryan7998-technews.herokuapp.com
