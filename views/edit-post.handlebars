@@ -1,0 +1,13 @@
+<a href="/dashboard">Back to dashboard</a>
+<h2>Edit Post</h2>
+<form class="edit-post-form">
+    <div class="form-group">
+        <input type="text" class="form-control m-2" id="post-title" value="{{post.title}}">
+        <textarea id="post-body" class="form-control m-2" name="post-body" rows="5">{{post.post_content}}</textarea>
+        <button type="submit" class="btn btn-primary mt-2">Update Post</button>
+        <button type="button" class="delete-post-btn btn btn-danger mt-2">Delete Post</button>
+
+    </div>
+</form>
+
+<script src="/javascript/edit-post.js"></script>

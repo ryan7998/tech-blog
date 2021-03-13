@@ -1,0 +1,15 @@
+{{!-- Show Posts: (Partial) --}}
+{{> post-info post }}
+{{!-- Show Comments: (Partial) --}}
+{{> comments post.comments}}
+
+{{#if loggedIn}}
+{{!-- Comment Form: --}}
+<form class="comment-form">
+    <div class="form-group mt-3 mb-3">
+        <textarea class="form-control" name="comment-body" rows="3"></textarea>
+        <button type="submit" class="btn btn-primary mt-2">Add Comment</button>
+   </div>
+</form>
+<script src="/javascript/comment.js"></script>
+{{/if}}

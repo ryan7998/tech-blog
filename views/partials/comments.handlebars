@@ -1,0 +1,12 @@
+{{#if this.length}}
+<h5 class="mt-3">Comments:</h2>
+<ul class="list-group">
+    {{#each this}}
+        <li class="list-group-item">
+            <h6 class="mb-2">{{user.username}} <small>wrote</small></h5>
+            <p>"{{comment_text}}"</p>
+            <small>on {{created_at}}</small>
+        </li>
+    {{/each}}
+</ul>
+{{/if}}
