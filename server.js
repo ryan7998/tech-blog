@@ -9,7 +9,7 @@ const sequelizeStore = require('connect-session-sequelize')(session.Store);
 
 const sess = {
   secret: 'techblog secret secret',
-  cookie: {},
+  cookie: { maxAge:600000 },  // log out after 10 min of inactivity
   resave: false,
   saveUninitialized: true,
   store: new sequelizeStore({
